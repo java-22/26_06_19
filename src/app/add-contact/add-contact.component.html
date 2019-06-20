@@ -1,0 +1,31 @@
+<div fxFlex fxLayout="row" fxLayoutAlign="center">
+  <div fxFlex="60" fxLayout="column">
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="name" placeholder="Type contact name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="lastName" placeholder="Type contact last name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="email" placeholder="Type contact email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="phone" placeholder="Type contact phone">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="address" placeholder="Type contact address">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput fxFlex type="text" [(ngModel)]="description" placeholder="Type contact description">
+    </mat-form-field>
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="end">
+      <button mat-button (click)="addContact()">Add</button>
+    </div>
+  </div>
+</div>
